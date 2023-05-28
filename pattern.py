@@ -1,3 +1,13 @@
+import pymssql
+import pandas as pd
+import numpy as np
+import mplfinance as mpf
+from collections import defaultdict
+
+def connect_SQL_server(): pass
+def get_data(company, start, end, cursor): pass 
+def get_turning_wave(company, start, end, cursor): pass
+    
 def find_patterns(min_max):
     patterns = defaultdict(list) # In order to append index easily
     
