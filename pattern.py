@@ -15,7 +15,7 @@ def find_patterns(min_max):
     for i in range(5 ,len(min_max)):
         window = min_max.iloc[i - 5:i]
 
-        if window.index[-1] - window.index[0] > 60:
+        if ((window.iloc[-1]['start_day'] - window.iloc[0]['start_day']).days) > 180:
             continue
 
         a, b, c, d, e = window['close_price'].iloc[0:5]
@@ -28,7 +28,7 @@ def find_patterns(min_max):
     for i in range(5 ,len(min_max)):
         window = min_max.iloc[i - 5:i]
 
-        if window.index[-1] - window.index[0] > 60:
+        if ((window.iloc[-1]['start_day'] - window.iloc[0]['start_day']).days) > 180:
             continue
 
         a, b, c, d, e = window['close_price'].iloc[0:5]
