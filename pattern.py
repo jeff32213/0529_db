@@ -47,6 +47,7 @@ def prepare_plot_data(df, patterns, type, turning_wave, result):
         result[type]['turning_points'] = []
         result[type]['datepairs'] = []
         result[type]['intervals'] = []
+        result[type]['necklines'] = []
         return
 
     
